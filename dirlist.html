@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Directory Listing</title>
+</head>
+<body>
+    <h1>Contents of {{ directory_path }}</h1>
+    <ul>
+        {% for item in contents %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
